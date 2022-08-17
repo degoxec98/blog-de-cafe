@@ -100,8 +100,14 @@ img {
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
-        gap: 2rem;
-    }    
+        justify-content: space-between;
+    }
+    .navegacion__enlace {
+        margin-right: 2rem;
+    }
+    .navegacion__enlace:last-of-type {
+        margin-right: 0;
+    }
 }
 .navegacion__enlace {
     display: block;
@@ -179,4 +185,13 @@ img {
     background-color: var(--negro);
     margin-top: 4rem;
     padding-bottom: 3rem;
+}
+
+/* Nosotros */
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
